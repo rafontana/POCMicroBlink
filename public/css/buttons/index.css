@@ -1,0 +1,23 @@
+:root {
+    --gris-1: #363636;
+    --gris-2: #666666;
+    --gris-3: #797979;
+    --gris-4: #CECECE;
+    --gris-5: #E9E9E9;
+    --gris-6: #F6F6F6;
+    --rojo-1: #E4002B;
+    --rojo-2: #D4002B;
+    --degradado-rojo: #fce8ed;
+    --naranja-secundario: #FF7D00;
+    --verde-secundario: #007A6E;
+    --amarillo-secundario: #FFBB24;
+
+    --generic-width: 90%;
+    --generic-font: "Roboto";
+    --genetic-font-size: 12px;
+}
+
+
+.button-icons{
+    margin: 5rem!important;
+}

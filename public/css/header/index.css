@@ -1,0 +1,332 @@
+:root {
+    --gris-1 : #363636;
+    --gris-2 : #666666;
+    --gris-3 : #797979;
+    --gris-4 : #CECECE;
+    --gris-5 : #E9E9E9;
+    --gris-6 : #F6F6F6;
+    --rojo-1 : #E4002B;
+    --rojo-2 : #D4002B;
+    --degradado-rojo : #fce8ed;
+    --naranja-secundario : #FF7D00;
+    --verde-primario : #959E53;
+    --verde-secundario : #007A6E;
+    --amarillo-secundario : #FFBB24;
+
+    --generic-width: 80%;
+    --generic-font: "Roboto";
+    --genetic-font-size : 12px;
+}
+
+.header-container-div{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: start;
+    padding: 1.5rem;
+    align-items: center;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+
+.steps-container {
+    width: 100%;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F6F6F6;
+    bottom: 2vh;
+}
+
+.step-box{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin:1%;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.step-box-inactive{
+    background-color: var(--rojo-2) ;
+    opacity: .4;
+}
+
+.step-box-active{
+    background-color: var(--rojo-2) ;
+}
+
+.step-box span {
+    color: white;
+    font-family: var(--generic-font);
+}
+
+.logo-sm{
+    width: 20%;
+}
+
+.container-screen-wizard{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-container-screen-wizard{
+    width: 80%;
+}
+
+.task-title{
+    font-family: var(--generic-font);
+    color: var(--gris-2);
+    text-align: center;
+}
+
+.task-description{
+    font-family: var(--generic-font);
+    color: var(--gris-3);
+    text-align: center;
+}
+
+.sub-link-option{
+    padding-top: 1rem;
+    color: var(--rojo-2);
+    font-family: var(--generic-font);
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.sub-link-option:hover{
+    opacity: 0.9
+}
+
+.center-container-def{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+}
+
+.colored-bg-container{
+    background-color: #F6F6F6;
+    height: 90vh;
+    display: flex; 
+    flex-direction: column;
+}
+
+.auto-container-bg{
+    flex: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.center-container-def-text{
+    color:rgba(121, 121, 121, 1);
+    text-align:center,
+    
+}
+.start-scan-anchor{
+    color: var(--rojo-2);
+    font-size: 16px;
+    text-decoration: none;
+    font-family: var(--generic-font);
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity:.7;
+}
+
+.start-scan-anchor:hover{
+    color: var(--rojo-2);
+    opacity: 1;
+    text-decoration: none;
+}
+
+.loading-src{
+   font-style: italic;
+   color: #666666;
+   font-family: var(--generic-font);
+}
+
+.advice-scanner{
+    color: #000;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: var(--generic-font);
+}
+
+#screen-initial,
+#screen-scanning {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.body-scan {
+    display: flex;
+    min-height: 100%;
+    margin: 0;
+    padding: 1.5rem;
+    justify-content: center;
+    align-items: center;
+  }
+/* Rules for better readability */
+
+video {
+  width: 100%;
+  height: 100%;
+}
+
+  progress {
+    color: lightblue;
+  }
+  
+  progress::-moz-progress-bar {
+    background: lightcolor;
+  }
+  
+  progress::-webkit-progress-value {
+    background: red;
+  }
+  
+  progress::-webkit-progress-bar {
+    background: blue;
+  }
+
+/* Camera feedback */
+#screen-scanning {
+    position: relative;
+  }
+  
+  #camera-feedback {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  
+    width: 100%;
+    height: 100%;
+  }
+  
+  #camera-guides {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  /* Auxiliary classes */
+  .hidden {
+    display: none !important;
+  }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .notification-image{
+        width: 50vw;
+    }
+    .sub-link-option{
+        font-size: smaller;
+    }
+    .task-description{
+        font-size: 12px;
+    }
+    .task-title{
+        font-size: 16px;
+    }
+    .video-microblink{
+        width: 90%;
+    }
+    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .notification-image{
+        width: 50vw;
+    }
+    .sub-link-option{
+        font-size: smaller;
+    }
+    .task-description{
+        font-size: 12px;
+    }
+    .task-title{
+        font-size: 16px;
+    }
+    .video-microblink{
+        width: 90%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .notification-image{
+        width: 50vw;
+        height:auto
+    }
+    .sub-link-option{
+        font-size: 1rem;
+    }
+    .task-description{
+        font-size: 22px;
+    }
+    .task-title{
+        font-size: 24px;
+    }
+    .video-microblink{
+        width: 50%;
+    }
+
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .notification-image{
+        width: 15vw;
+        height:auto
+    }
+    .sub-link-option{
+        font-size: 1rem;
+    }
+    .task-description{
+        font-size: 22px;
+    }
+    .task-title{
+        font-size: 24px;
+    }
+    .video-microblink{
+        width: 30%;
+    }
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .notification-image{
+        width: 15vw;
+        height:auto
+    }
+    .sub-link-option{
+        font-size: 1rem;
+    }
+    .task-description{
+        font-size: 22px;
+    }
+    .task-title{
+        font-size: 24px;
+    }
+    .video-microblink{
+        width: 30%;
+    }
+    
+}
+    

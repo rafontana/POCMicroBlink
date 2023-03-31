@@ -1,0 +1,102 @@
+/*
+* === PALETA DE COLORES GRAL ===
+*/
+
+:root {
+    --gris-1 : #363636;
+    --gris-2 : #666666;
+    --gris-3 : #797979;
+    --gris-4 : #CECECE;
+    --gris-5 : #E9E9E9;
+    --gris-6 : #F6F6F6;
+    --rojo-1 : #E4002B;
+    --rojo-2 : #D4002B;
+    --degradado-rojo : #fce8ed;
+    --naranja-secundario : #FF7D00;
+    --verde-primario : #959E53;
+    --verde-secundario : #007A6E;
+    --amarillo-secundario : #FFBB24;
+
+    --generic-width: 98%;
+    --generic-font: "Roboto";
+    --genetic-font-size : 12px;
+}
+
+.poliza-page-spinner{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.poliza-page-wrapper{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+}
+
+.standar-spliter{
+    width: 95%;
+    height: 10px;
+    border-bottom: 1px var(--gris-5) solid;
+}
+
+/* .cuenta-individual-header{
+}
+
+.cuenta-individual-header div{
+    padding: .4rem;
+    font-family: var(--generic-font);
+}
+
+.cuenta-individual-header p{
+    padding: .4rem;
+    font-family: var(--generic-font);
+    font-size: var(--genetic-font-size);
+    color: var(--gris-2);
+    font-weight: bold;
+} */
+
+.detalle-pago-title{
+    margin:0;
+    padding-top: .8rem;
+    padding-left: 0;
+    color: var(--verde-primario);
+    font-size: 16px;
+}
+.pagos-close-icon-modal{
+    color:var(--gris-2);
+    display: flex;
+    flex:1;
+    justify-content: flex-end;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.pagos-header-display{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comisiones-excel-container{
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+.table-container-action-button{
+    display: flex; 
+    justify-content:center;
+    align-items:center;
+    flex-direction: column
+}
+
+.solicitudes-wrapper{
+    width:var(--generic-width);
+    padding-top: 1rem;
+    margin-bottom: 1rem
+}
+
